@@ -6,8 +6,8 @@
    <rect>
     <x>0</x>
     <y>0</y>
-    <width>400</width>
-    <height>300</height>
+    <width>572</width>
+    <height>461</height>
    </rect>
   </property>
   <property name="windowTitle">
@@ -17,7 +17,7 @@
    <item row="0" column="0">
     <widget class="QStackedWidget" name="stackedWidget">
      <property name="currentIndex">
-      <number>0</number>
+      <number>2</number>
      </property>
      <widget class="QWidget" name="login_page">
       <layout class="QGridLayout" name="gridLayout_2">
@@ -54,7 +54,7 @@
            <item>
             <widget class="QWidget" name="widget" native="true">
              <property name="styleSheet">
-              <string notr="true">background-color: rgb(247, 238, 255);</string>
+              <string notr="true"/>
              </property>
              <layout class="QGridLayout" name="gridLayout_3">
               <item row="0" column="0">
@@ -71,7 +71,7 @@
                   <item>
                    <widget class="QLineEdit" name="number_lineEdit">
                     <property name="text">
-                     <string>111</string>
+                     <string/>
                     </property>
                    </widget>
                   </item>
@@ -89,7 +89,10 @@
                   <item>
                    <widget class="QLineEdit" name="password_lineEdit">
                     <property name="text">
-                     <string>222</string>
+                     <string/>
+                    </property>
+                    <property name="echoMode">
+                     <enum>QLineEdit::Password</enum>
                     </property>
                    </widget>
                   </item>
@@ -185,7 +188,7 @@
            <item>
             <widget class="QWidget" name="widget_2" native="true">
              <property name="styleSheet">
-              <string notr="true">background-color: rgb(248, 255, 230);</string>
+              <string notr="true"/>
              </property>
              <layout class="QGridLayout" name="gridLayout_6">
               <item row="0" column="0">
@@ -200,7 +203,10 @@
                 <item row="0" column="1">
                  <widget class="QLineEdit" name="r_number_lineEdit">
                   <property name="text">
-                   <string>12</string>
+                   <string/>
+                  </property>
+                  <property name="placeholderText">
+                   <string>请输入9位数字</string>
                   </property>
                  </widget>
                 </item>
@@ -212,7 +218,11 @@
                  </widget>
                 </item>
                 <item row="1" column="1">
-                 <widget class="QLineEdit" name="r_password_lineEdit"/>
+                 <widget class="QLineEdit" name="r_password_lineEdit">
+                  <property name="placeholderText">
+                   <string>长度限制在8~16</string>
+                  </property>
+                 </widget>
                 </item>
                 <item row="2" column="0">
                  <widget class="QLabel" name="rp_number_label">
@@ -225,7 +235,11 @@
                  </widget>
                 </item>
                 <item row="2" column="1">
-                 <widget class="QLineEdit" name="rp_password_lineEdit"/>
+                 <widget class="QLineEdit" name="rp_password_lineEdit">
+                  <property name="placeholderText">
+                   <string>再次输入密码</string>
+                  </property>
+                 </widget>
                 </item>
                </layout>
               </item>
@@ -300,7 +314,7 @@
         <number>0</number>
        </property>
        <item row="0" column="0">
-        <layout class="QVBoxLayout" name="verticalLayout_4">
+        <layout class="QVBoxLayout" name="verticalLayout_4" stretch="0,0">
          <property name="spacing">
           <number>0</number>
          </property>
@@ -336,8 +350,350 @@
            </widget>
            <widget class="QWidget" name="project_page">
             <property name="styleSheet">
-             <string notr="true">background-color: rgb(253, 255, 240);</string>
+             <string notr="true"/>
             </property>
+            <layout class="QGridLayout" name="gridLayout_11">
+             <item row="0" column="0">
+              <layout class="QVBoxLayout" name="verticalLayout_6">
+               <item>
+                <layout class="QHBoxLayout" name="horizontalLayout_9">
+                 <item>
+                  <spacer name="horizontalSpacer_6">
+                   <property name="orientation">
+                    <enum>Qt::Horizontal</enum>
+                   </property>
+                   <property name="sizeHint" stdset="0">
+                    <size>
+                     <width>40</width>
+                     <height>20</height>
+                    </size>
+                   </property>
+                  </spacer>
+                 </item>
+                 <item>
+                  <widget class="QPushButton" name="launch_btn">
+                   <property name="text">
+                    <string>发布项目</string>
+                   </property>
+                  </widget>
+                 </item>
+                </layout>
+               </item>
+               <item>
+                <widget class="QListWidget" name="listWidget_2"/>
+               </item>
+              </layout>
+             </item>
+            </layout>
+           </widget>
+           <widget class="QWidget" name="project_imformation_page">
+            <layout class="QGridLayout" name="gridLayout_9">
+             <item row="0" column="0">
+              <layout class="QVBoxLayout" name="verticalLayout_5" stretch="1,1,1,1,5,1,5,1,5">
+               <item>
+                <widget class="QWidget" name="widget_3" native="true">
+                 <layout class="QGridLayout" name="gridLayout_10">
+                  <item row="0" column="1">
+                   <spacer name="horizontalSpacer_5">
+                    <property name="orientation">
+                     <enum>Qt::Horizontal</enum>
+                    </property>
+                    <property name="sizeHint" stdset="0">
+                     <size>
+                      <width>339</width>
+                      <height>20</height>
+                     </size>
+                    </property>
+                   </spacer>
+                  </item>
+                  <item row="0" column="0">
+                   <widget class="QPushButton" name="returnTOmain_btn">
+                    <property name="text">
+                     <string>返回</string>
+                    </property>
+                   </widget>
+                  </item>
+                  <item row="0" column="2">
+                   <widget class="QPushButton" name="apply_btn">
+                    <property name="text">
+                     <string>申请加入</string>
+                    </property>
+                   </widget>
+                  </item>
+                 </layout>
+                </widget>
+               </item>
+               <item>
+                <layout class="QHBoxLayout" name="horizontalLayout_8">
+                 <item>
+                  <widget class="QLabel" name="pj_name_label">
+                   <property name="text">
+                    <string>项目名称:</string>
+                   </property>
+                  </widget>
+                 </item>
+                 <item>
+                  <widget class="QLineEdit" name="pj_name_lineEdit">
+                   <property name="enabled">
+                    <bool>false</bool>
+                   </property>
+                  </widget>
+                 </item>
+                </layout>
+               </item>
+               <item>
+                <layout class="QHBoxLayout" name="horizontalLayout_15" stretch="1,3">
+                 <item>
+                  <widget class="QLabel" name="publish_label">
+                   <property name="text">
+                    <string>项目发起者:</string>
+                   </property>
+                  </widget>
+                 </item>
+                 <item>
+                  <widget class="QLabel" name="publisher_linelabel">
+                   <property name="text">
+                    <string/>
+                   </property>
+                  </widget>
+                 </item>
+                </layout>
+               </item>
+               <item>
+                <widget class="QLabel" name="pj_profile_label">
+                 <property name="text">
+                  <string>项目简介：</string>
+                 </property>
+                </widget>
+               </item>
+               <item>
+                <widget class="QTextBrowser" name="pj_profile_textBrowser"/>
+               </item>
+               <item>
+                <widget class="QLabel" name="pj_demand_label">
+                 <property name="text">
+                  <string>项目要求:</string>
+                 </property>
+                </widget>
+               </item>
+               <item>
+                <widget class="QTextBrowser" name="pj_demand_textBrowser"/>
+               </item>
+               <item>
+                <widget class="QLabel" name="pj_participators_label">
+                 <property name="text">
+                  <string>参与人员:</string>
+                 </property>
+                </widget>
+               </item>
+               <item>
+                <widget class="QListWidget" name="pj_participators_listWidget"/>
+               </item>
+              </layout>
+             </item>
+            </layout>
+           </widget>
+           <widget class="QWidget" name="myinfo_display_page">
+            <layout class="QGridLayout" name="gridLayout_14">
+             <item row="0" column="0">
+              <layout class="QVBoxLayout" name="verticalLayout_8" stretch="16,1,1,1,16,1,0">
+               <item>
+                <widget class="QLabel" name="d_bg_label">
+                 <property name="styleSheet">
+                  <string notr="true">background-color: rgb(170, 0, 0);</string>
+                 </property>
+                 <property name="text">
+                  <string/>
+                 </property>
+                </widget>
+               </item>
+               <item>
+                <layout class="QHBoxLayout" name="horizontalLayout_11">
+                 <item>
+                  <widget class="QLabel" name="d_name_label">
+                   <property name="text">
+                    <string>昵称:</string>
+                   </property>
+                  </widget>
+                 </item>
+                 <item>
+                  <widget class="QLineEdit" name="d_name_lineEdit">
+                   <property name="enabled">
+                    <bool>false</bool>
+                   </property>
+                  </widget>
+                 </item>
+                </layout>
+               </item>
+               <item>
+                <layout class="QHBoxLayout" name="horizontalLayout_12">
+                 <item>
+                  <widget class="QLabel" name="d_number_label">
+                   <property name="text">
+                    <string>学号:</string>
+                   </property>
+                  </widget>
+                 </item>
+                 <item>
+                  <widget class="QLineEdit" name="d_number_lineEdit">
+                   <property name="enabled">
+                    <bool>false</bool>
+                   </property>
+                  </widget>
+                 </item>
+                </layout>
+               </item>
+               <item>
+                <widget class="QLabel" name="d_myprofile_label">
+                 <property name="text">
+                  <string>个人简介:</string>
+                 </property>
+                </widget>
+               </item>
+               <item>
+                <widget class="QTextBrowser" name="d_myprofile_textBrowser"/>
+               </item>
+               <item>
+                <widget class="QPushButton" name="d_edit_btn">
+                 <property name="text">
+                  <string>编辑</string>
+                 </property>
+                </widget>
+               </item>
+               <item>
+                <spacer name="verticalSpacer_5">
+                 <property name="orientation">
+                  <enum>Qt::Vertical</enum>
+                 </property>
+                 <property name="sizeHint" stdset="0">
+                  <size>
+                   <width>20</width>
+                   <height>40</height>
+                  </size>
+                 </property>
+                </spacer>
+               </item>
+              </layout>
+             </item>
+            </layout>
+           </widget>
+           <widget class="QWidget" name="myinfo_edit_page">
+            <layout class="QGridLayout" name="gridLayout_15">
+             <item row="0" column="0">
+              <layout class="QVBoxLayout" name="verticalLayout_9" stretch="16,1,1,1,16,1,0">
+               <item>
+                <widget class="QLabel" name="e_bg_label">
+                 <property name="styleSheet">
+                  <string notr="true">background-color: rgb(170, 0, 0);</string>
+                 </property>
+                 <property name="text">
+                  <string/>
+                 </property>
+                </widget>
+               </item>
+               <item>
+                <layout class="QHBoxLayout" name="horizontalLayout_13">
+                 <item>
+                  <widget class="QLabel" name="e_name_label">
+                   <property name="text">
+                    <string>昵称:</string>
+                   </property>
+                  </widget>
+                 </item>
+                 <item>
+                  <widget class="QLineEdit" name="e_name_lineEdit"/>
+                 </item>
+                </layout>
+               </item>
+               <item>
+                <layout class="QHBoxLayout" name="horizontalLayout_14">
+                 <item>
+                  <widget class="QLabel" name="e_number_label">
+                   <property name="text">
+                    <string>学号:</string>
+                   </property>
+                  </widget>
+                 </item>
+                 <item>
+                  <widget class="QLineEdit" name="e_number_lineEdit">
+                   <property name="enabled">
+                    <bool>false</bool>
+                   </property>
+                  </widget>
+                 </item>
+                </layout>
+               </item>
+               <item>
+                <widget class="QLabel" name="e_myprofile_label">
+                 <property name="text">
+                  <string>个人简介:</string>
+                 </property>
+                </widget>
+               </item>
+               <item>
+                <widget class="QTextEdit" name="e_myprofile_textEdit"/>
+               </item>
+               <item>
+                <widget class="QPushButton" name="update_btn">
+                 <property name="text">
+                  <string>完成</string>
+                 </property>
+                </widget>
+               </item>
+               <item>
+                <spacer name="verticalSpacer_6">
+                 <property name="orientation">
+                  <enum>Qt::Vertical</enum>
+                 </property>
+                 <property name="sizeHint" stdset="0">
+                  <size>
+                   <width>20</width>
+                   <height>40</height>
+                  </size>
+                 </property>
+                </spacer>
+               </item>
+              </layout>
+             </item>
+            </layout>
+           </widget>
+           <widget class="QWidget" name="notice_page">
+            <layout class="QGridLayout" name="gridLayout_16">
+             <property name="verticalSpacing">
+              <number>0</number>
+             </property>
+             <item row="0" column="0">
+              <layout class="QVBoxLayout" name="verticalLayout_10">
+               <property name="spacing">
+                <number>0</number>
+               </property>
+               <item>
+                <layout class="QHBoxLayout" name="horizontalLayout_16">
+                 <property name="spacing">
+                  <number>0</number>
+                 </property>
+                 <item>
+                  <widget class="QPushButton" name="pushButton">
+                   <property name="text">
+                    <string>PushButton</string>
+                   </property>
+                  </widget>
+                 </item>
+                 <item>
+                  <widget class="QPushButton" name="pushButton_2">
+                   <property name="text">
+                    <string>PushButton</string>
+                   </property>
+                  </widget>
+                 </item>
+                </layout>
+               </item>
+               <item>
+                <widget class="QListWidget" name="listWidget_3"/>
+               </item>
+              </layout>
+             </item>
+            </layout>
            </widget>
           </widget>
          </item>
@@ -366,7 +722,106 @@
              </property>
             </widget>
            </item>
+           <item>
+            <widget class="QPushButton" name="notice_btn">
+             <property name="text">
+              <string>通知</string>
+             </property>
+             <property name="flat">
+              <bool>true</bool>
+             </property>
+            </widget>
+           </item>
+           <item>
+            <widget class="QPushButton" name="myinfo_btn">
+             <property name="text">
+              <string>个人</string>
+             </property>
+             <property name="flat">
+              <bool>true</bool>
+             </property>
+            </widget>
+           </item>
           </layout>
+         </item>
+        </layout>
+       </item>
+      </layout>
+     </widget>
+     <widget class="QWidget" name="project_launch_page">
+      <layout class="QGridLayout" name="gridLayout_13">
+       <item row="0" column="0">
+        <layout class="QVBoxLayout" name="verticalLayout_7" stretch="1,1,1,4,1,4">
+         <item>
+          <widget class="QWidget" name="widget_4" native="true">
+           <layout class="QGridLayout" name="gridLayout_12">
+            <item row="0" column="1">
+             <spacer name="horizontalSpacer_7">
+              <property name="orientation">
+               <enum>Qt::Horizontal</enum>
+              </property>
+              <property name="sizeHint" stdset="0">
+               <size>
+                <width>339</width>
+                <height>20</height>
+               </size>
+              </property>
+             </spacer>
+            </item>
+            <item row="0" column="0">
+             <widget class="QPushButton" name="l_returnTOmain_btn">
+              <property name="text">
+               <string>返回</string>
+              </property>
+             </widget>
+            </item>
+            <item row="0" column="2">
+             <widget class="QPushButton" name="l_launch_btn">
+              <property name="text">
+               <string>发布</string>
+              </property>
+             </widget>
+            </item>
+           </layout>
+          </widget>
+         </item>
+         <item>
+          <layout class="QHBoxLayout" name="horizontalLayout_10">
+           <item>
+            <widget class="QLabel" name="pj_name_label_2">
+             <property name="text">
+              <string>项目名称:</string>
+             </property>
+            </widget>
+           </item>
+           <item>
+            <widget class="QLineEdit" name="l_pj_name_lineEdit">
+             <property name="enabled">
+              <bool>true</bool>
+             </property>
+            </widget>
+           </item>
+          </layout>
+         </item>
+         <item>
+          <widget class="QLabel" name="l_pj_profile_label">
+           <property name="text">
+            <string>项目简介：</string>
+           </property>
+          </widget>
+         </item>
+         <item>
+          <widget class="QTextEdit" name="pj_profile_textEdit"/>
+         </item>
+         <item>
+          <widget class="QLabel" name="l_pj_demand_label">
+           <property name="text">
+            <string>项目要求:</string>
+           </property>
+          </widget>
+         </item>
+         <item>
+          <widget class="QTextEdit" name="pj_demand_textEdit"/>
          </item>
         </layout>
        </item>
